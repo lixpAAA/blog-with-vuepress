@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/lxp/',
+  base: '/dist/',
   title: '说明文档',
   description: '文档说明，若有不正，请及时指正',
   head: [
