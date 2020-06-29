@@ -16,20 +16,22 @@ module.exports = {
     }
   },
   themeConfig: {
+    // 横向导航栏
     nav: [
       { text: '首页', link: '/' },
       { text: '导航', link: '/guide/' },
-      { text: '测试', link: '/test', ariaLabel: 'Language Menu', items: [{ text: '测试1', link: '/' }] }
+      { text: '链接', link: '/', items: [{ text: '文档链接', link: '/' }] }
     ],
+    // 纵向导航栏
     sidebar: [
       {
-        title: '标题 1',   // required
-        path: '/',      // optional, link of the title, which should be an absolute path and must exist
-        collapsable: false, // optional, defaults to true
+        title: '前端相关',   // required
+        // path: '' // optional
+        collapsable: true, // optional, defaults to true
         sidebarDepth: 2,    // optional, defaults to 1
         children: [
           {
-            title: '测试首页',   // required
+            title: '微前端初识',   // required
             path: '/test/',
           },
           {

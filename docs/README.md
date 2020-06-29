@@ -1,9 +1,8 @@
 ---
 home: true
 heroImage: /favicon.ico
-heroText: Welcome to home
-tagline: Home
-actionText: 开始 →
+heroText: 新手，多多指教
+actionText: start →
 actionLink: /guide/
 features:
 - title: Simplicity First
