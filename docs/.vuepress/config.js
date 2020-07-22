@@ -3,7 +3,7 @@ module.exports = {
   title: '说明文档',
   description: '文档说明，若有不正，请及时指正',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/my.ico' }]
   ],
   host: '0.0.0.0',
   port: 8080,
@@ -28,15 +28,30 @@ module.exports = {
         title: '前端相关',   // required
         // path: '' // optional
         collapsable: true, // optional, defaults to true
-        sidebarDepth: 2,    // optional, defaults to 1
+        sidebarDepth: 3,    // optional, defaults to 1
         children: [
           {
             title: '微前端初识',   // required
-            path: '/test/',
+            path: '/aboutFont/',
           },
           {
-            title: '测试2',   // required
-            path: '/test/one',
+            title: '前端基础',   // required
+            // path: '/aboutFont/prototype',
+            // collapsable: true, // optional, defaults to true
+            children: [
+              {
+              title: '原型及原型链',
+              path: '/aboutFont/basicknow/',
+            },
+              {
+              title: '作用域',
+              path: '/aboutFont/basicknow/scope',
+            },
+              {
+              title: '执行上下文作用域',
+              path: '/aboutFont/basicknow/exestack',
+            }
+            ]
           }
 
         ]
