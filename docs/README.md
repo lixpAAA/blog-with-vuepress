@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /favicon.ico
+heroImage: /my.ico
 heroText: 新手，多多指教
 actionText: start →
 actionLink: /guide/
