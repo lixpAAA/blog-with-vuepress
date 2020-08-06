@@ -20,7 +20,7 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       { text: '导航', link: '/guide/' },
-      { text: '链接', link: '/', items: [{ text: '文档链接', link: '/' }] }
+      { text: '链接', link: '/tt', items: [{ text: '文档链接', link: '/' }] }
     ],
     // 纵向导航栏
     sidebar: [
@@ -52,8 +52,21 @@ module.exports = {
               path: '/aboutFont/basicknow/exestack',
             }
             ]
+          },
+          // {
+          //   title: '前端优化',   // required
+          //   path: '/optimize/',
+          // },
+          {
+            title: '前端测试',   // required
+            path: '/fontTest/jestVue/',
+            children:[
+              {
+                title: 'vue + jest',
+                path:'/fontTest/jestVue/'
+              }
+            ]
           }
-
         ]
       },
       {
