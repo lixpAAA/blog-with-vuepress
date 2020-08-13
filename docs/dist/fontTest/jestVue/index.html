@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>如何利用在vue项目中利用jest搞测试 | 说明文档</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="/blog-with-vuepress/docs/dist/my.ico">
+    <meta name="description" content="文档说明，若有不正，请及时指正">
+    <link rel="preload" href="/blog-with-vuepress/docs/dist/assets/css/0.styles.7ba878f7.css" as="style"><link rel="preload" href="/blog-with-vuepress/docs/dist/assets/js/app.ca72fd20.js" as="script"><link rel="preload" href="/blog-with-vuepress/docs/dist/assets/js/2.9815d997.js" as="script"><link rel="preload" href="/blog-with-vuepress/docs/dist/assets/js/11.69288452.js" as="script"><link rel="prefetch" href="/blog-with-vuepress/docs/dist/assets/js/10.e01c326b.js"><link rel="prefetch" href="/blog-with-vuepress/docs/dist/assets/js/12.54d7ad38.js"><link rel="prefetch" href="/blog-with-vuepress/docs/dist/assets/js/13.bb893f37.js"><link rel="prefetch" href="/blog-with-vuepress/docs/dist/assets/js/3.b8d9ce26.js"><link rel="prefetch" href="/blog-with-vuepress/docs/dist/assets/js/4.d834309e.js"><link rel="prefetch" href="/blog-with-vuepress/docs/dist/assets/js/5.400247fd.js"><link rel="prefetch" href="/blog-with-vuepress/docs/dist/assets/js/6.0b186868.js"><link rel="prefetch" href="/blog-with-vuepress/docs/dist/assets/js/7.a7c8a336.js"><link rel="prefetch" href="/blog-with-vuepress/docs/dist/assets/js/8.1bc52b9b.js"><link rel="prefetch" href="/blog-with-vuepress/docs/dist/assets/js/9.a9f2a550.js">
+    <link rel="stylesheet" href="/blog-with-vuepress/docs/dist/assets/css/0.styles.7ba878f7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog-with-vuepress/docs/dist/" class="home-link router-link-active"><!----> <span class="site-name">说明文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog-with-vuepress/docs/dist/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog-with-vuepress/docs/dist/guide/" class="nav-link">
+  导航
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="链接" class="dropdown-title"><span class="title">链接</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog-with-vuepress/docs/dist/" class="nav-link">
+  文档链接
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog-with-vuepress/docs/dist/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog-with-vuepress/docs/dist/guide/" class="nav-link">
+  导航
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="链接" class="dropdown-title"><span class="title">链接</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog-with-vuepress/docs/dist/" class="nav-link">
+  文档链接
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>前端相关</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog-with-vuepress/docs/dist/aboutFont/" class="sidebar-link">微前端初识</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>前端基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/blog-with-vuepress/docs/dist/fontTest/jestVue/" class="sidebar-heading clickable router-link-exact-active router-link-active open active"><span>前端测试</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog-with-vuepress/docs/dist/fontTest/jestVue/" class="active sidebar-link">vue + jest</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog-with-vuepress/docs/dist/fontTest/jestVue/#如何利用在vue项目中利用jest搞测试" class="sidebar-link">如何利用在vue项目中利用jest搞测试</a></li></ul></li></ul></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Group 2</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="如何利用在vue项目中利用jest搞测试"><a href="#如何利用在vue项目中利用jest搞测试" class="header-anchor">#</a> 如何利用在vue项目中利用jest搞测试</h2> <h3 id="项目设置"><a href="#项目设置" class="header-anchor">#</a> 项目设置</h3> <ul><li>使用vue-cli3.0以上</li> <li>安装 @vue/cli-plugin-unit-jest //  单元测试插件，更多细节请移步<a href="https://github.com/vuejs/vue-docs-zh-cn/blob/master/vue-cli-plugin-unit-jest/README.md" target="_blank" rel="noopener noreferrer">相关文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>安装 @vue/test-utils //  vue单元测试函数库，更多细节请移步<a href="https://vue-test-utils.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">相关文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>配置jest.config.js文件， <a href="https://jestjs.io/docs/zh-Hans/configuration" target="_blank" rel="noopener noreferrer">参考文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>package.json添加   &quot;test:unit&quot;: &quot;vue-cli-service test:unit --coverage&quot;, // 生成html测试报告
+&quot;test&quot;: &quot;vue-cli-service test:unit -u --silent&quot;,</li></ul> <h3 id="示例：test-spec-js"><a href="#示例：test-spec-js" class="header-anchor">#</a> 示例：test.spec.js</h3> <div class="language- extra-class"><pre class="language-text"><code>import { mount, createLocalVue } from '@vue/test-utils'
+import HelloWorld from '@/components/HelloWorld.vue'
+import Vuex from 'vuex'
+
+const localVue = createLocalVue()
+// mock函数方便模拟ajax请求
+const mockFn = function(url) { // url.方便模拟不同url返回不同的数据
+ return Promise.resolve({list:{a:1}})
+}
+localVue.use(Vuex)
+const mock = ()=&gt; {}
+const store = new Vuex.Store({
+  user:{}
+})
+const $confirm = mock
+const $route = {
+  query: {userId: '123'},
+  params:{}
+}
+// mock $router对象
+const $router = {
+  go:mock,
+  push:mock,
+  replace:mock,
+}
+localVue.prototype.$ajax = {
+  get:(url)=&gt; mockFn(url),
+  post:(url)=&gt; mockFn(url),
+  delete:(url)=&gt; mockFn(url),
+  put:(url)=&gt; mockFn(url),
+}
+describe('HelloWorld.vue', () =&gt; {
+  it('renders props.msg when passed', () =&gt; {
+    const wrapper = mount(HelloWorld, {
+      localVue,
+      store,
+      propsData:{}, // 可以传入一些 vue实例选项中的props data
+      mocks: {
+        $router,
+        $route,
+        $confirm // 模拟像this.$comfirm这样的弹出确认框
+      }
+    })
+    wrapper.vm.getDate()  // 可以直接调用vue实例中的函数， 跟多参考https://vue-test-utils.vuejs.org/zh/guides/#%E8%B5%B7%E6%AD%A5
+    expect(wrapper.vm.msg).toBeUndefined() // jest 断言库
+  })
+  it('userId', () =&gt; {
+    const wrapper = mount(HelloWorld, {
+      localVue,
+      store,
+      mocks: {
+        $router,
+        $route
+      }
+    })
+    expect(wrapper.vm.$route.query.userId).toBe('123') // 
+  })
+  test('re', ()=&gt; {
+    const wrapper = mount(HelloWorld, {
+      localVue,
+      store,
+      mocks: {
+        $router,
+        $route
+      }
+    })
+    expect(wrapper.element).toMatchSnapshot('test')
+  })
+})
+
+</code></pre></div><p>最后运行 npm run test:unit (这个后面可加文件，表示单独对某个文件测试)
+打开coverage下的html就可以看到测试报告了</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog-with-vuepress/docs/dist/aboutFont/basicknow/exestack.html" class="prev">
+        执行上下文作用域
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog-with-vuepress/docs/dist/assets/js/app.ca72fd20.js" defer></script><script src="/blog-with-vuepress/docs/dist/assets/js/2.9815d997.js" defer></script><script src="/blog-with-vuepress/docs/dist/assets/js/11.69288452.js" defer></script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/blog-with-vuepress/dist/', // 资源前缀
+  base: '/blog-with-vuepress/docs/dist/', // 资源前缀
   title: '说明文档',
   description: '文档说明，若有不正，请及时指正',
   head: [
