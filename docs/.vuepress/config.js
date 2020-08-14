@@ -40,17 +40,17 @@ module.exports = {
             // collapsable: true, // optional, defaults to true
             children: [
               {
-              title: '原型及原型链',
-              path: '/aboutFont/basicknow/',
-            },
+                title: '原型及原型链',
+                path: '/aboutFont/basicknow/',
+              },
               {
-              title: '作用域',
-              path: '/aboutFont/basicknow/scope',
-            },
+                title: '作用域',
+                path: '/aboutFont/basicknow/scope',
+              },
               {
-              title: '执行上下文作用域',
-              path: '/aboutFont/basicknow/exestack',
-            }
+                title: '执行上下文作用域',
+                path: '/aboutFont/basicknow/exestack',
+              }
             ]
           },
           // {
@@ -60,10 +60,20 @@ module.exports = {
           {
             title: '前端测试',   // required
             path: '/fontTest/jestVue/',
-            children:[
+            children: [
               {
                 title: 'vue + jest',
-                path:'/fontTest/jestVue/'
+                path: '/fontTest/jestVue/'
+              }
+            ]
+          },
+          {
+            title: 'css',   // required
+            path: '/css/cssCollection/',
+            children: [
+              {
+                title: 'css酷炫操作',
+                path: '/css/cssCollection/'
               }
             ]
           }
