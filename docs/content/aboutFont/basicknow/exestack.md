@@ -34,3 +34,27 @@ function test(){
 test() // 222
 ```
 看到这里你可能有点质疑，这是这里存在函数的提升,也就相当于下面的函数把上面的覆盖了。
+补充：
+ 1. this 为调用函数的对象，这种理解是不对的， 我们来看下面的例子：
+ ```
+ var value = 1;
+
+var foo = {
+  value: 2,
+  bar: function () {
+    return this.value;
+  }
+}
+
+//示例1
+console.log(foo.bar()); // 2
+//示例2
+console.log((foo.bar)()); // 2
+//示例3
+console.log((foo.bar = foo.bar)()); // 1
+//示例4
+console.log((false || foo.bar)()); // 1
+//示例5
+console.log((foo.bar, foo.bar)()); // 1
+ ```
+ 这里简单说一下， 这里的this的确定跟Reference 类型有关。 就简单理解上面的例子，（）左边参与了运算，this将指向全局
