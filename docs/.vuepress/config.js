@@ -32,7 +32,7 @@ module.exports = {
         children: [
           {
             title: '微前端初识',   // required
-            path: '/aboutFont/',
+            path: '/content/aboutFont/',
           },
           {
             title: '前端基础',   // required
@@ -41,15 +41,15 @@ module.exports = {
             children: [
               {
                 title: '原型及原型链',
-                path: '/aboutFont/basicknow/',
+                path: '/content/aboutFont/basicknow/',
               },
               {
                 title: '作用域',
-                path: '/aboutFont/basicknow/scope',
+                path: '/content/aboutFont/basicknow/scope',
               },
               {
                 title: '执行上下文作用域',
-                path: '/aboutFont/basicknow/exestack',
+                path: '/content/aboutFont/basicknow/exestack',
               }
             ]
           },
@@ -59,21 +59,21 @@ module.exports = {
           // },
           {
             title: '前端测试',   // required
-            path: '/fontTest/jestVue/',
+            path: '/content/fontTest/jestVue/',
             children: [
               {
                 title: 'vue + jest',
-                path: '/fontTest/jestVue/'
+                path: '/content/fontTest/jestVue/'
               }
             ]
           },
           {
             title: 'css',   // required
-            path: '/css/cssCollection/',
+            path: '/content/cssCollection/',
             children: [
               {
                 title: 'css酷炫操作',
-                path: '/css/cssCollection/'
+                path: '/content/cssCollection/'
               }
             ]
           }
