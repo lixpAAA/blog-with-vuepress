@@ -76,7 +76,7 @@ export default {
     this.$options.components.SidebarLinks = require('@theme/components/SidebarLinks.vue').default
   },
   mounted() {
-    this.$vuepress.$set ('pageInfoId', this.item.id || createRandomId())
+    this.$vuepress.$set ('pageInfoId', this.item.id)
   },
   methods: { isActive }
 }

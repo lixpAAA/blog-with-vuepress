@@ -93,5 +93,17 @@ module.exports = {
   },
   plugins: [
     '@vuepress/back-to-top',
+     [
+      'vuepress-plugin-comment',
+      {
+        choosen: 'valine', 
+        // options选项中的所有参数，会传给Valine的配置
+        options: {
+          el: '#valine-vuepress-comment',
+          appId: 'KueJEefaYFf4YykQCFzYqkuj-gzGzoHsz',
+          appKey: '5haq4pnntNrxvgTs7RHXfyu4'
+        }
+      }
+    ]
   ]
 } 

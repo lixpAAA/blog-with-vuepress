@@ -4,7 +4,6 @@
 
     <Content class="theme-default-content" />
     <PageEdit />
-    <Commend />
     <PageNav v-bind="{ sidebarItems }" />
 
     <slot name="bottom" />
@@ -14,11 +13,10 @@
 <script>
 import PageEdit from '@theme/components/PageEdit.vue'
 import PageNav from '@theme/components/PageNav.vue'
-import Commend from './Commend.vue'
 import Content from './Content.js'
 
 export default {
-  components: { PageEdit, PageNav,Commend ,Content},
+  components: { PageEdit, PageNav ,Content},
   props: ['sidebarItems']
 }
 </script>
