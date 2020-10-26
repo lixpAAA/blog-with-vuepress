@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.7.1",
     "vuepress": "^1.4.1"
-  }
+  },
+  "dependencies": {}
 }

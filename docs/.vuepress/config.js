@@ -1,3 +1,4 @@
+
 module.exports = {
   base: '/blog-with-vuepress/docs/dist/', // 资源前缀
   title: '说明文档',
@@ -71,9 +72,13 @@ module.exports = {
             title: 'css',   // required
             path: '/content/cssCollection/',
             children: [
-              {
+              { 
                 title: 'css酷炫操作',
                 path: '/content/cssCollection/'
+              },
+               {
+                title: 'css基础篇',
+                path: '/content/cssCollection/css/css1'
               }
             ]
           }
@@ -85,5 +90,8 @@ module.exports = {
       }
     ],
     searchPlaceholder: '搜索内容'
-  }
-}
+  },
+  plugins: [
+    '@vuepress/back-to-top',
+  ]
+} 

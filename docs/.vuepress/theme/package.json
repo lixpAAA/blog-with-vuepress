@@ -1,0 +1,15 @@
+{
+  "name": "testVuepressTheme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "axios": "^0.20.0",
+    "vuex": "^3.5.1"
+  }
+}
